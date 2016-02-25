@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    include ./head.jade
+
+  body
+    //- include ./header.jade
+    .ui.borderless.main.menu#header
+      .ui.text.container
+        a.item(href="#", style="padding: 0px")
+          img.ui.tiny.image(src="img/logo.png")
+        a.item(href="#") 系所介紹
+        a.item(href="#") 學生專區
+        a.item(href="#") 檔案下載
+        a.item(href="#") 聯絡資訊
+
+    script(src="//code.jquery.com/jquery-2.2.0.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js")
+    script(src="./js/main.js")
