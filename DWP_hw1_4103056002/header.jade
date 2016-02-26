@@ -1,8 +1,26 @@
-.ui.borderless.main.menu
-	.ui.text.container
-		a.item.header(href="#")
-			img.ui.img.mini(src="img/logo.png")
-		a.item(href="#") 系所介紹
-		a.item(href="#") 學生專區
-		a.item(href="#") 檔案下載
-		a.item(href="#") 聯絡資訊
+.ui.borderless.main.menu#header
+  .ui.text.container
+    a.item(href="#", style="padding: 0px")
+      img.ui.tiny.image(src="img/logo.png")
+    
+    .ui.dropdown.item
+      | 系所介紹
+      .menu
+        a.item(href="#") 系所簡介
+        a.item(href="#") 教授簡介
+        a.item(href="#") 實驗室簡介
+    .ui.dropdown.item
+      | 學生專區
+      .menu
+        a.item(href="#") 大學部
+        a.item(href="#") 碩班/在職專班
+        a.item(href="#") 博士班
+    .ui.dropdown.item
+      | 檔案下載
+      .menu
+        a.item(href="#") 大學部
+        a.item(href="#") 碩班/在職專班
+        a.item(href="#") 博士班
+        a.item(href="#") 教師
+        a.item(href="#") 相關辦法
+    a.item(href="#") 聯絡資訊
