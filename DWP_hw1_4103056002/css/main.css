@@ -1,0 +1,43 @@
+body {
+	color: #444444;
+	background-color: #E4E4E4;
+}
+
+.default-font, .item, p, td {
+	font-family: '微軟正黑體';
+}
+
+td {
+	font-size: 16px;
+}
+
+h1, h2 {
+	color: #41B3D3;
+	font-family: '微軟正黑體';
+}
+
+.secondary.pointing.menu .active.item {
+	border-color: #41B3D3 !important;
+	color: #41B3D3 !important;
+}
+
+.secondary.pointing.menu .active.item:hover {
+	border-color: #61D2DC !important;
+	color: #61D2DC !important;
+}
+
+.segment {
+	padding: 15px 30px !important;
+}
+
+.normal-color {
+	color: #41B3D3 !important;
+}
+
+.active-color {
+	color: #61D2DC !important;
+}
+
+.main {
+	padding-top: 52px;
+}

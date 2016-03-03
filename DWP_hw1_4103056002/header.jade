@@ -1,14 +1,9 @@
-.ui.borderless.main.menu#header
-  .ui.text.container
-    a.item(href="#", style="padding: 0px")
+.ui.fixed.borderless.menu.default-font#header
+  .ui.container
+    a.item(href="./index.html", style="padding: 0px")
       img.ui.tiny.image(src="img/logo.png")
     
-    .ui.dropdown.item
-      | 系所介紹
-      .menu
-        a.item(href="#") 系所簡介
-        a.item(href="#") 教授簡介
-        a.item(href="#") 實驗室簡介
+    a.item(href="./department.html") 系所介紹
     .ui.dropdown.item
       | 學生專區
       .menu
@@ -23,4 +18,7 @@
         a.item(href="#") 博士班
         a.item(href="#") 教師
         a.item(href="#") 相關辦法
-    a.item(href="#") 聯絡資訊
+    a.item(href="./contact.html") 聯絡資訊
+.main
+    .ui.container
+      img.ui.fluid.image(src="img/de1.jpg")
