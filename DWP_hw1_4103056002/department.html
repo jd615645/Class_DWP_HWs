@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="./img/icon.ico">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/department.css">
   </head>
   <body>
+    <div class="ui vertical sidebar menu"><a href="./index.html" style="padding: 0px" class="item"><img src="img/logo.png" class="ui tiny image"></a><a href="./department.html" class="item">系所介紹</a><a href="./download.html" class="item">檔案下載</a><a href="./contact.html" class="item">聯絡資訊</a></div>
     <div id="header" class="ui fixed borderless menu default-font">
-      <div class="ui container"><a href="./index.html" style="padding: 0px" class="item"><img src="img/logo.png" class="ui tiny image"></a><a href="./department.html" class="item">系所介紹</a>
+      <div class="ui container"><a class="toc item"><i class="sidebar icon"></i></a><a href="./index.html" style="padding: 0px" class="item"><img src="img/logo.png" class="ui tiny image"></a><a href="./department.html" class="item">系所介紹</a>
         <div class="ui dropdown item">學生專區
           <div class="menu"><a href="#" class="item">大學部</a><a href="#" class="item">碩班/在職專班</a><a href="#" class="item">博士班</a></div>
         </div>
@@ -85,12 +87,22 @@
             <div value="2">
               <h2 class="default-font">教授</h2>
               <div class="ui divider"></div>
+              <div id="professor" class="ui divided items"></div>
               <h2 class="default-font">副教授</h2>
               <div class="ui divider"></div>
+              <div id="associate_professor" class="ui divided items"></div>
               <h2 class="default-font">助理教授</h2>
               <div class="ui divider"></div>
+              <div id="assistant_professor" class="ui divided items"></div>
+              <h2 class="default-font">特聘教授</h2>
+              <div class="ui divider"></div>
+              <div id="distinguished_professor" class="ui divided items"></div>
             </div>
-            <div value="3"></div>
+            <div value="3">
+              <h2 class="default-font">實驗室</h2>
+              <div class="ui divider"></div>
+              <div id="lab" class="ui divided items"></div>
+            </div>
           </div>
         </div>
       </div>
