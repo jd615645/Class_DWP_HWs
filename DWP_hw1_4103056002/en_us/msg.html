@@ -1,0 +1,191 @@
+<!--4103056002 杜杰 第一次作業 3/22
+    4103056002 Chieh, Tu First Homework 3/22
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NCHU CS</title>
+    <meta charset="UTF-8">
+    </style>
+  </head>
+  <body bgcolor="#E4E4E4">
+
+    <div align="center">
+      <table width="960" cellpadding="1">
+        <tr>
+          <td width="15%">
+            <a href="./main.html">
+              <img src="../img/logo.png" width="100">
+            </a>
+          </td>
+          <td width="10%">
+            <a href="./introduce_dept.html"><font face="Arial">Introduction</font></a>
+          </td>
+          <td width="10%">
+            <a href="./introduce_prof.html"><font face="Arial">Faculty</font></a>
+          </td>
+          <td width="10%">
+            <a href="./introduce_lab.html"><font face="Arial">Laboratory</font></a>
+          </td>
+          <td width="10%">
+            <a href="./student.html"><font face="Arial">Curriculum</font></a>
+          </td>
+          <td width="10%">
+            <a href="./download_rule.html"><font face="Arial">Download</font></a>
+          </td>
+          <td width="10%">
+            <a href="./contact.html"><font face="Arial">Contanct</font></a>
+          </td>
+          <td width="10%">
+            <a href="./msg.html"><font face="Arial">Message</font></a>
+          </td>
+          <td width="10%" align="right">
+            <a href="../zh_tw/msg.html"><font face="Arial">zh_tw/en_us</font></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div align="center">
+      <figcaption>
+        <img src="../img/de1.jpg" alt="main pic">
+      </figcaption>
+    </div>
+
+    <table width="960" align="center" bgcolor="white" cellpadding="10">
+      <tr>
+        <td>
+          <aside>
+            <h5><font face="Arial">Problem</font></h5>
+            <hr>
+          </aside>
+          <form method="post" autocomplete="">
+            <p>
+              <lable><font face="Arial">Date</font></lable>
+              <input type = "date">
+            </p>
+            <p>
+              <lable><font face="Arial">Time</font></lable>
+              <input type = "time">
+            </p>
+            
+            <p>
+              <lable><font face="Arial">Email</font></lable>
+              <input type = "email" placeholder="abc@domain.com">
+            <p>
+            <p>
+              <lable><font face="Arial">Problem</font></lable>
+              <input type = "url">
+            </p>
+            <p>
+              <lable><font face="Arial">Browser</font></lable>
+              <input list="browsers" name="browser">
+              <datalist id="browsers">
+                  <option value="Internet Explorer">
+                  <option value="Firefox">
+                  <option value="Chrome">
+                  <option value="Opera">
+                  <option value="Safari">
+              </datalist>
+            </p>
+            <input type = "submit" value = "Submit">
+            <input type = "reset" value = "Clear">
+          </form>
+          <aside>
+            <h5><font face="Arial">Leave message</font></h5>
+            <hr>
+          </aside>
+          <form method="post" action="on">
+            <p>
+              <lable><font face="Arial">Date</font></lable>
+              <input type = "datetime-local">
+            </p>
+            <p>
+              <lable><font face="Arial">Name</font></lable>
+              <input type = "text">
+            </p>
+            <p>
+              <lable><font face="Arial">Anonymous</font></lable>
+              <input type="radio" name="location" value="yes"> yes
+              <input type="radio" name="location" value="no"> no
+            </p>
+            <p>
+              <lable><font face="Arial">Message</font></lable>
+            </p>
+            <p>
+              <textarea cols="50" rows="5"></textarea>
+            </p>
+            <input type = "submit" value = "Submit">
+            <input type = "reset" value = "Clear">
+          </form>
+          <aside>
+            <section><h5><font face="Arial">Borrow the classroom</font></h5></section>
+            <hr>
+          </aside>
+          <form method="post" action="on">
+            <p>
+              <lable><font face="Arial">Date and Time</font></lable>
+              <input type = "datetime-local">
+            </p>
+            <p>
+              <lable><font face="Arial">Week</font></lable>
+              <input type = "week">
+            </p>
+            <p>
+              <lable><font face="Arial">Borrower</font></lable>
+              <input type = "text">
+            </p>
+            <p>
+              <lable><font face="Arial">Degree</font></lable>
+              <input type = "number" min="1" max="5">
+            </p>
+            <p>
+              <lable><font face="Arial">Department</font></lable>
+              <select>
+                <option value="">Bachelor degree</option>
+                <option value="">Master's degree</option>
+                <option value="">Academic degree</option>
+                <option value=""></option>
+              </select>
+            </p>
+            <p>
+              <lable><font face="Arial">Lab</font></lable>
+              <input type = "text">
+            </p>
+            <p>
+              <lable><font face="Arial">Phone</font></lable>
+              <input type = "tel">
+            </p>
+            <input type = "submit" value = "Submit">
+            <input type = "reset" value = "Clear">
+
+            <!-- 不知道哪裡能用到所以就被放置了 -->
+            <p hidden>
+              <input type = "datetime">
+              <input type = "range" min="0" max="10">
+              <input type = "color" type="hidden">
+              <input type = "search" type="hidden">
+              <input type="number" name="points" step="3" type="hidden">
+              <input type="checkbox" name="checkbox">
+              <input type="password" name="password">
+              <input type="month">
+            </p>
+          </form>
+        </td>
+      </tr>
+    </table>
+
+   <footer align="center">
+      <table width="960" align="center">
+         <caption><font face="Arial">Department of Computer Science and Engineering</font></caption>
+         <tr>
+            <td>
+              <font face="Arial">Tel 04-2284-0497、04-2284-0498 | Fax 04-2285-3869 | Address 250, Kuo Kuang Road, Taichung 402, Taiwan, R.O.C. </font>
+            </td>
+            <br>
+            <a href="./sitemap.html"><font face="Arial">sitemap</font></a>
+         </tr>
+      </table>
+   </footer>
+   </body>
+</html>
