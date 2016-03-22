@@ -68,7 +68,6 @@
               <lable><font face="微軟正黑體">時間</font></lable>
               <input type = "time">
             </p>
-            
             <p>
               <lable><font face="微軟正黑體">Email</font></lable>
               <input type = "email" placeholder="abc@domain.com">
@@ -81,11 +80,11 @@
               <lable><font face="微軟正黑體">使用瀏覽器</font></lable>
               <input list="browsers" name="browser">
               <datalist id="browsers">
-                  <option value="Internet Explorer">
-                  <option value="Firefox">
-                  <option value="Chrome">
-                  <option value="Opera">
-                  <option value="Safari">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
               </datalist>
             </p>
             <input type = "submit" value = "Submit">
@@ -96,19 +95,31 @@
             <hr>
           </aside>
           <form method="post" action="on">
-            <p>
-              <lable><font face="微軟正黑體">日期及時間</font></lable>
-              <input type = "datetime-local">
-            </p>
-            <p>
-              <lable><font face="微軟正黑體">姓名</font></lable>
-              <input type = "text">
-            </p>
-            <p>
-              <lable><font face="微軟正黑體">匿名</font></lable>
-              <input type="radio" name="location" value="yes"> 是
-              <input type="radio" name="location" value="no"> 否
-            </p>
+            <table>
+              <tr>
+                <td rowspan="2">
+                  <p>
+                    <lable><font face="微軟正黑體">姓名</font></lable>
+                    <input type = "text" required="required" autofocus="autofocus" maxlength="8">
+                  </p>
+                  <p>
+                    <lable><font face="微軟正黑體">匿名</font></lable>
+                    <input type="radio" name="location" value="yes"> 是
+                    <input type="radio" name="location" value="no"> 否
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <lable><font face="微軟正黑體">日期及時間</font></lable>
+                    <input type = "datetime-local">
+                  </p>
+                  <p>
+                    <lable><font face="微軟正黑體">Email</font></lable>
+                    <input type = "email" placeholder="abc@domain.com">
+                  <p>
+                </td>
+              </tr>
+            </table>
             <p>
               <lable><font face="微軟正黑體">訊息</font></lable>
             </p>
@@ -118,58 +129,72 @@
             <input type = "submit" value = "Submit">
             <input type = "reset" value = "Clear">
           </form>
+
           <aside>
             <section><h5><font face="微軟正黑體">教室預約</font></h5></section>
             <hr>
           </aside>
           <form method="post" action="on">
-            <p>
-              <lable><font face="微軟正黑體">日期及時間</font></lable>
-              <input type = "datetime-local">
-            </p>
-            <p>
-              <lable><font face="微軟正黑體">第幾周</font></lable>
-              <input type = "week">
-            </p>
-            <p>
-              <lable><font face="微軟正黑體">借用人</font></lable>
-              <input type = "text">
-            </p>
-            <p>
-              <lable><font face="微軟正黑體">年級</font></lable>
-              <input type = "number" min="1" max="5">
-            </p>
-            <p>
-              <lable><font face="微軟正黑體">部門</font></lable>
-              <select>
-                <option value="">大學部</option>
-                <option value="">碩士班</option>
-                <option value="">博士班</option>
-                <option value=""></option>
-              </select>
-            </p>
-            <p>
-              <lable><font face="微軟正黑體">Lab</font></lable>
-              <input type = "text">
-            </p>
-            <p>
-              <lable><font face="微軟正黑體">電話</font></lable>
-              <input type = "tel">
-            </p>
-            <h6><font size="1" face="微軟正黑體">若借用時間為非上班時間，請先向系辦索取鑰匙</font></h6>
-            <input type = "submit" value = "Submit">
-            <input type = "reset" value = "Clear">
+            <table width="100%">
+              <tr>
+                <td>
+                  <p>
+                    <lable><font face="微軟正黑體">日期及時間</font></lable>
+                    <input type = "datetime-local">
+                  </p>
+                  <p>
+                    <lable><font face="微軟正黑體">第幾周</font></lable>
+                    <input type = "week">
+                  </p>
+                </td>
+                <td colspan="2">
+                  <p>
+                    <lable><font face="微軟正黑體">借用人</font></lable>
+                    <input type = "text" required="required" maxlength="8">
+                  </p>
+                  <p>
+                    <lable><font face="微軟正黑體">部門</font></lable>
+                    <select>
+                      <option value="">大學部</option>
+                      <option value="">碩士班</option>
+                      <option value="">博士班</option>
+                      <option value=""></option>
+                    </select>
+                  </p>
+                  <p>
+                    <lable><font face="微軟正黑體">年級</font></lable>
+                    <input type = "number" min="1" max="5">
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <lable><font face="微軟正黑體">Lab</font></lable>
+                    <input type = "text">
+                  </p>
+                  <p>
+                    <lable><font face="微軟正黑體">電話</font></lable>
+                    <input type = "tel">
+                  </p>
+                </td>
+              </tr>
+            </table>
+              <h6><font size="1" face="微軟正黑體">若借用時間為非上班時間，請先向系辦索取鑰匙</font></h6>
+              <input type = "submit" value = "Submit">
+              <input type = "reset" value = "Clear">
 
             <!-- 不知道哪裡能用到所以就被放置了 -->
             <p hidden>
-              <input type = "datetime">
-              <input type = "range" min="0" max="10">
-              <input type = "color" type="hidden">
-              <input type = "search" type="hidden">
-              <input type="number" name="points" step="3" type="hidden">
-              <input type="checkbox" name="checkbox">
-              <input type="password" name="password">
-              <input type="month">
+              <form action="">
+                <input type = "datetime">
+                <input type = "range" min="0" max="10">
+                <input type = "color" type="hidden">
+                <input type = "search" type="hidden">
+                <input type="number" name="points" step="3" type="hidden">
+                <input type="checkbox" name="checkbox">
+                <input type="password" name="password">
+                <input type="month">
+                <input type="submit" formnovalidate="formnovalidate" value="Submit" />
+              </form>
             </p>
           </form>
         </td>
