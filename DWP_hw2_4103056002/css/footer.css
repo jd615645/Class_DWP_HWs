@@ -1,5 +1,4 @@
-.footer.segment {
+#footer {
+	margin-top: 0px;
 	bottom: 0;
-	width: 100%;
-	position: absolute;
 }

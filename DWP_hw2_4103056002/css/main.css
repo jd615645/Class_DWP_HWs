@@ -1,20 +1,37 @@
 body {
-  color: #444444;
-  background-color: #E4E4E4;
+  color: #22313F;
+  background-color: #E4F1FE;
   font-size: 16px;
 }
 
-.default-font, .item, p, td {
+p, td, a, li, h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', '黑體-繁', '微軟正黑體', sans-serif;
+}
+
+a:hover {
+  color: #4AA0D5;
+}
+
+#main-pic {
+  text-align: center;
+  padding-top: 10px;
+
+}
+
+#main-block {
+  background-color: white;
+  width: 960px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0px auto;
 }
 
 td {
   font-size: 16px;
 }
 
-h1, h2 {
-  color: #41B3D3;
-  font-family: 'Roboto', '黑體-繁', '微軟正黑體', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  color: #8DC6FF;
 }
 
 .secondary.pointing.menu .active.item {
@@ -43,20 +60,16 @@ h1, h2 {
   padding-top: 52px;
 }
 
-#newsPage .item:hover {
-  color: #61D2DC;
-  background-color: #ECFFFB;
+#footer {
+  margin-top: 10px;
+  padding: 10px 0px;
+  background-color: #22313F;
+  width: 100%;
+  position: absolute;
 }
 
-.ui.list.bulleted {
-margin-left: 20px;
-  margin-right: 20px;
-}
-
-#newsPage .item:first-child .wide {
-  padding-top: 0px;
-}
-
-#newsPage .item .six.wide {
-  text-align: right;
+#footer p  {
+  color: #E4F1FE;
+  margin-bottom: 0px;
+  text-align: center;
 }

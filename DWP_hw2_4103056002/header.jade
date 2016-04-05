@@ -1,26 +1,24 @@
-.ui.fixed.borderless.menu.default-font#header
-  .ui.container
-    //- a.toc.item
-    //-   i.sidebar.icon
-    a.item(href="./", style="padding: 0px")
-      img.ui.tiny.image(src="img/logo.png")
-    
-    a.item(href="./department.html") 系所介紹
-    .ui.dropdown.item
-      | 學生專區
-      .menu
-        a.item(href="#") 大學部
-        a.item(href="#") 碩班/在職專班
-        a.item(href="#") 博士班
-    .ui.dropdown.item
-      | 檔案下載
-      .menu
-        a.item(href="#") 大學部
-        a.item(href="#") 碩班/在職專班
-        a.item(href="#") 博士班
-        a.item(href="#") 教師
-        a.item(href="#") 相關辦法
-    a.item(href="./contact.html") 聯絡資訊
-.main
-    .ui.container
-      img.ui.fluid.image(src="img/de1.jpg")
+div(style="background-color: #22313F;")
+  #nav-bar
+    ul
+      li
+        a(href="./index.html") 首頁
+      li
+        a(href="./introduce_dept_zhtw.html") 系所簡介
+      li
+        a(href="./introduce_prof_zhtw.html") 教授簡介
+      li
+        a(href="./introduce_lab_zhtw.html") 實驗室簡介
+      li
+        a(href="./student_zhtw.html") 學生專區
+      li
+        a(href="./download_rule_zhtw.html") 檔案下載
+      li
+        a(href="./contact_zhtw.html") 聯絡資訊
+      li
+        a(href="./msg_zhtw.html") 訪客留言
+      li(style="float: right;")
+        a.active(href="./") 中英切換
+
+#main-pic
+  img(src="img/de1.jpg")

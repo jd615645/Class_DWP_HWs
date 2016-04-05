@@ -1,0 +1,31 @@
+#nav-bar {
+    margin: 0px auto;
+    width: 960px;
+}
+
+#nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#nav-bar li {
+    float: left;
+}
+
+#nav-bar li a {
+    display: block;
+    color: #E4F1FE;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav-bar li a:hover:not(.active) {
+    background-color: #8DC6FF;
+}
+
+#nav-bar .active {
+    background-color: #3490DE;
+}

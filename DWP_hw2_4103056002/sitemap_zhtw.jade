@@ -1,0 +1,36 @@
+extends ./head.jade
+
+block footer
+  link(rel='stylesheet', href='./css/footer.css')
+
+block content
+  include ./header.jade
+  #main-block
+    h1 網站地圖
+    hr
+    p
+      a(href='./index.html') 中文首頁
+    p
+      a(href='./introduce_dept_zhtw.html') 系所介紹
+    p
+      a(href='./introduce_prof_zhtw.html') 教授簡介
+    p
+      a(href='./introduce_lab_zhtw.html') 實驗室簡介
+    p
+      a(href='./student_zhtw.html') 學生專區
+    details
+      summary
+        a(href='./download_rule_zhtw.html') 檔案下載
+      p
+        a(href='./download_rule_zhtw.html') 修業規定
+      p
+        a(href='./download_list_zhtw.html') 畢業條件明細
+      p
+        a(href='./download_from_zhtw.html') 表格下載
+    p
+      a(href='./content_zhtw.html') 聯絡資訊
+    p
+      a(href='./msg_zhtw.html') 訪客留言
+
+
+  include ./footer.jade
