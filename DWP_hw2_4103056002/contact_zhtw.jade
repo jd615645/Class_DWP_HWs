@@ -1,10 +1,8 @@
 extends ./head.jade
 
-block footer
-  link(rel='stylesheet', href='./css/footer.css')
-
+block change
+  a.active(href="./contact_enus.html") 中英切換
 block content
-  include ./header.jade
   #main-block
     h1 聯絡本系
     hr
@@ -18,4 +16,4 @@ block content
       li
         h4 地址：402台中市南區國光路250號資訊科學與工程學系
 
-  include ./footer.jade
+  include ./footer-zhtw.jade

@@ -1,7 +1,8 @@
 extends ./head.jade
 
+block change
+  a.active(href="./msg_enus.html") 中英切換
 block content
-  include ./header.jade
   #main-block
     table(width='960', align='center', bgcolor='white', cellpadding='10')
       tr
@@ -116,4 +117,4 @@ block content
                 input(type='submit', formnovalidate='formnovalidate', value='Submit')
 
 
-  include ./footer.jade
+  include ./footer-zhtw.jade

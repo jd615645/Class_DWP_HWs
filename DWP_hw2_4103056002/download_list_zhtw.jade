@@ -1,10 +1,11 @@
 extends ./head.jade
 
-block footer
+block footer-css
   link(rel='stylesheet', href='./css/footer.css')
 
+block change
+  a.active(href="./download_list_enus.html") 中英切換
 block content
-  include ./header.jade
   #main-block
     table(width='900', align='center', bgcolor='white', cellpadding='10')
       tr
@@ -71,4 +72,4 @@ block content
                 a(href='http://www.cs.nchu.edu.tw/form/546_xakd.pdf', target='_blank') 104學年度博士班畢業條件明細表
 
 
-  include ./footer.jade
+  include ./footer-zhtw.jade

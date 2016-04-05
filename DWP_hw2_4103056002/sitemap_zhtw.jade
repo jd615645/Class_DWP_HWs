@@ -1,10 +1,11 @@
 extends ./head.jade
 
-block footer
+block footer-css
   link(rel='stylesheet', href='./css/footer.css')
 
+block change
+  a.active(href="./sitemap_enus.html") 中英切換
 block content
-  include ./header.jade
   #main-block
     h1 網站地圖
     hr
@@ -33,4 +34,4 @@ block content
       a(href='./msg_zhtw.html') 訪客留言
 
 
-  include ./footer.jade
+  include ./footer-zhtw.jade

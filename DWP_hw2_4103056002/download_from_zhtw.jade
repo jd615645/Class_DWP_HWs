@@ -1,7 +1,8 @@
 extends ./head.jade
 
+block change
+  a.active(href="./download_from_enus.html") 中英切換
 block content
-  include ./header.jade
   #main-block
     table(width='960', align='center', bgcolor='white', cellpadding='10')
       tr
@@ -65,4 +66,4 @@ block content
               li
                 a(href='http://www.cs.nchu.edu.tw/form/502_4yb8.pdf', target='_blank') 博士班資格考檢定申請書（以發表論文抵替方式檢定）
 
-  include ./footer.jade
+  include ./footer-zhtw.jade
