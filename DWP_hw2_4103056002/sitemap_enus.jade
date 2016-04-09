@@ -1,0 +1,45 @@
+extends ./head_enus.jade
+
+block change
+  a.active(href="./sitemap_zhtw.html") zh_tw/en_us
+block content
+  #main-block
+    h1
+      font(color='#41B3D3', face='Arial') Sitemap
+    hr
+    p
+      a(href='../')
+        font(color='#41B3D3', face='Arial') Main page
+    p
+      a(href='./introduce_dept.html')
+        font(color='#41B3D3', face='Arial') Introduction
+    p
+      a(href='./introduce_prof.html')
+        font(color='#41B3D3', face='Arial') Faculty
+    p
+      a(href='./introduce_lab.html')
+        font(color='#41B3D3', face='Arial') Laboratory
+    p
+      a(href='./student.html')
+        font(color='#41B3D3', face='Arial') Curriculum
+    details
+      summary
+        a(href='./download_rule.html')
+          font(color='#41B3D3', face='Arial') Download
+      p
+        a(href='./download_rule.html')
+          font(color='#41B3D3', face='Arial') Official Regulations
+      p
+        a(href='./download_list.html')
+          font(color='#41B3D3', face='Arial') Graduating Requirements
+      p
+        a(href='./download_from.html')
+          font(color='#41B3D3', face='Arial') Form
+    p
+      a(href='./content.html')
+        font(color='#41B3D3', face='Arial') Contanct
+    p
+      a(href='./msg.html')
+        font(color='#41B3D3', face='Arial') Message
+
+  include ./footer-enus.jade
