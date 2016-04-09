@@ -2,10 +2,15 @@ body {
   color: #22313F;
   background-color: #E4F1FE;
   font-size: 16px;
+  font: 'Roboto', '黑體-繁', '微軟正黑體', sans-serif;
 }
 
 p, td, a, li, h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', '黑體-繁', '微軟正黑體', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
 }
 
 a:hover {
