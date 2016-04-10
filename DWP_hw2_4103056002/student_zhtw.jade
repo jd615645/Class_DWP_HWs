@@ -1,19 +1,15 @@
 extends ./head.jade
 
-block change
-  a.active(href="./student_enus.html") 中英切換
-
 block content
   #main-block
-    div(align='left')
+    div
       h1 學生專區
       hr
-      table(width='50%')
-        tr
-          nav
-            a(href='#dept-U') 大學部
-            a(href='#dept-M') 碩士班/在職
-            a(href='#dept-D') 博士班
+      div
+        p
+          a(href='#dept-U') 大學部
+          a(href='#dept-M') 碩士班/在職
+          a(href='#dept-D') 博士班
       h3#dept-U 大學部
       hr
       div(align='center')

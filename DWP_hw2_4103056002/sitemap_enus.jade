@@ -1,45 +1,36 @@
 extends ./head_enus.jade
 
+block footer-css
+  link(rel='stylesheet', href='./css/footer.css')
+  link(rel='stylesheet', href='./css/sitemap.css')
+
 block change
   a.active(href="./sitemap_zhtw.html") zh_tw/en_us
 block content
   #main-block
-    h1
-      font(color='#41B3D3', face='Arial') Sitemap
-    hr
+    h1(style="-webkit-text-stroke: inherit;-webkit-box-reflect：none") Sitemap
     p
-      a(href='../')
-        font(color='#41B3D3', face='Arial') Main page
+      a(href='./main_enus.html') Main page
     p
-      a(href='./introduce_dept.html')
-        font(color='#41B3D3', face='Arial') Introduction
+      a(href='./introduce_dept_enus.html') Introduction
     p
-      a(href='./introduce_prof.html')
-        font(color='#41B3D3', face='Arial') Faculty
+      a(href='./introduce_prof_enus.html') Faculty
     p
-      a(href='./introduce_lab.html')
-        font(color='#41B3D3', face='Arial') Laboratory
+      a(href='./introduce_lab_enus.html') Laboratory
     p
-      a(href='./student.html')
-        font(color='#41B3D3', face='Arial') Curriculum
+      a(href='./student_enus.html') Curriculum
     details
       summary
-        a(href='./download_rule.html')
-          font(color='#41B3D3', face='Arial') Download
+        a(href='./download_rule_enus.html') Download
       p
-        a(href='./download_rule.html')
-          font(color='#41B3D3', face='Arial') Official Regulations
+        a(href='./download_rule_enus.html') Official Regulations
       p
-        a(href='./download_list.html')
-          font(color='#41B3D3', face='Arial') Graduating Requirements
+        a(href='./download_list_enus.html') Graduating Requirements
       p
-        a(href='./download_from.html')
-          font(color='#41B3D3', face='Arial') Form
+        a(href='./download_from_enus.html') Form
     p
-      a(href='./content.html')
-        font(color='#41B3D3', face='Arial') Contanct
+      a(href='./content_enus.html') Contanct
     p
-      a(href='./msg.html')
-        font(color='#41B3D3', face='Arial') Message
+      a(href='./msg_enus.html') Message
 
   include ./footer-enus.jade

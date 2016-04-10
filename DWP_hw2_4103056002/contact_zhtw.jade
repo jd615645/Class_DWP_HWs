@@ -2,7 +2,8 @@ extends ./head.jade
 
 block footer-css
   link(rel='stylesheet', href='./css/footer.css')
-    
+  link(rel='stylesheet', href='./css/animation.css')
+
 block change
   a.active(href="./contact_enus.html") 中英切換
 block content
@@ -18,5 +19,9 @@ block content
         h4 位置：國立中興大學理學大樓7-10樓
       li
         h4 地址：402台中市南區國光路250號資訊科學與工程學系
+    p#border-img1 網頁設計：資工二 杜杰
+    p#border-img2 網頁維護：資工二 杜杰
+  p#animation-1 我會變長變短
+  p#animation-2 我會飄移跟變色
 
   include ./footer-zhtw.jade

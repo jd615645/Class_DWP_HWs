@@ -1,45 +1,45 @@
 extends ./head.jade
 
+block footer-css
+  link(rel='stylesheet', href='./css/footer.css')
+    
 block change
   a.active(href="./download_rule_enus.html") 中英切換
 block content
   #main-block
-    table(width='900', align='center', bgcolor='white', cellpadding='10')
-      tr
-        td
-          div(align='left')
-            h1 各式文件下載 修業規定
-            hr
-            table(width='50%')
-              tr
-                td(width='25%')
-                  a(href='./download_rule_zhtw.html')
-                    h4 修業規定
-                td(width='25%')
-                  a(href='./download_list_zhtw.html')
-                    h4 畢業條件明細
-                td(width='25%')
-                  a(href='./download_from_zhtw.html')
-                    h4 表格下載
-            hr
-            h3#dept-U 大學部
-            hr
-            ul
-              li
-                a(href='http://www.cs.nchu.edu.tw/form/527_dg9b.pdf', target='_blank') 學生抵免學分辦法
-            h3#dept-M 碩士班
-            hr
-            ul
-              li
-                a(href='http://www.cs.nchu.edu.tw/form/527_dg9b.pdf', target='_blank') 碩士在職專班(含中科)研究生須知104.8.20
-              li
-                a(href='http://www.cs.nchu.edu.tw/form/547_p0db.pdf', target='_blank') 碩士班研究生須知104.8.20
-              li
-                a(href='http://www.cs.nchu.edu.tw/form/70_9ith.pdf', target='_blank') 學生抵免學分辦法(99.11.3)
-            h3#dept-D 博士班
-            hr
-            ul
-              li
-                a(href='http://www.cs.nchu.edu.tw/form/544_4qmw.pdf', target='_blank') 博士班修業規定(104學年度)1040610
+    div
+      h1 各式文件下載 修業規定
+      hr
+      table(width='50%')
+        tr
+          td(width='25%')
+            a(href='./download_rule_zhtw.html')
+              h4 修業規定
+          td(width='25%')
+            a(href='./download_list_zhtw.html')
+              h4 畢業條件明細
+          td(width='25%')
+            a(href='./download_from_zhtw.html')
+              h4 表格下載
+      hr
+      h3#dept-U 大學部
+      hr
+      ul
+        li
+          a(href='http://www.cs.nchu.edu.tw/form/527_dg9b.pdf', target='_blank') 學生抵免學分辦法
+      h3#dept-M 碩士班
+      hr
+      ul
+        li
+          a(href='http://www.cs.nchu.edu.tw/form/527_dg9b.pdf', target='_blank') 碩士在職專班(含中科)研究生須知104.8.20
+        li
+          a(href='http://www.cs.nchu.edu.tw/form/547_p0db.pdf', target='_blank') 碩士班研究生須知104.8.20
+        li
+          a(href='http://www.cs.nchu.edu.tw/form/70_9ith.pdf', target='_blank') 學生抵免學分辦法(99.11.3)
+      h3#dept-D 博士班
+      hr
+      ul
+        li
+          a(href='http://www.cs.nchu.edu.tw/form/544_4qmw.pdf', target='_blank') 博士班修業規定(104學年度)1040610
 
   include ./footer-zhtw.jade
