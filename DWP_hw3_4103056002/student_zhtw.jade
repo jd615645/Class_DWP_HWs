@@ -1,0 +1,35 @@
+extends ./head.jade
+
+block content
+  #main-block
+    h1.rand 學生專區
+    hr.rand
+    p.rand
+      a(href='#dept-U') 大學部
+      a(href='#dept-M') 碩士班/在職
+      a(href='#dept-D') 博士班
+    h3.rand#dept-U 大學部
+    hr.rand
+    img.rand(src='./img/U1.jpg', width='750')
+    img.rand(src='./img/U2.jpg', width='750')
+    img.rand(src='./img/U3.jpg', width='750')
+    img.rand(src='./img/U4.jpg', width='750')
+    img.rand(src='./img/U5.jpg', width='750')
+    img.rand(src='./img/U6.jpg', width='750')
+    h3.rand#dept-M 碩士班/在職
+    hr.rand
+    img.rand(src='./img/M1.jpg', width='750')
+    img.rand(src='./img/M2.jpg', width='750')
+    img.rand(src='./img/M3.jpg', width='750')
+    img.rand(src='./img/M4.jpg', width='750')
+    img.rand(src='./img/M5.jpg', width='750')
+    img.rand(src='./img/M6.jpg', width='750')
+    img.rand(src='./img/M7.jpg', width='750')
+    h3.rand#dept-D 博士班
+    hr.rand
+    img.rand(src='./img/D1.jpg', width='750')
+    img.rand(src='./img/D2.jpg', width='750')
+    img.rand(src='./img/D3.jpg', width='750')
+
+  include ./footer-zhtw.jade
+  include ./js_script.jade

@@ -1,0 +1,103 @@
+extends ./head.jade
+
+block change
+  a.active(href="./msg_enus.html") 中英切換
+block content
+  #main-block
+    h5.rand 回報問題
+    hr.rand
+    form.rand(method='post', autocomplete='')
+      p
+        lable 日期
+        input(type='date')
+      p
+        lable 時間
+        input(type='time')
+      p
+        lable Email
+        input(type='email', placeholder='abc@domain.com')
+      p
+      p
+        lable 問題連結
+        input(type='url')
+      p
+        lable 使用瀏覽器
+        input(list='browsers', name='browser')
+        datalist#browsers
+          option(value='Internet Explorer')
+          option(value='Firefox')
+          option(value='Chrome')
+          option(value='Opera')
+          option(value='Safari')
+      input(type='submit', value='Submit')
+      input(type='reset', value='Clear')
+    h5.rand 訪客留言
+    hr.rand
+    form.rand(method='post', action='on')
+      table
+        tr
+          td(rowspan='2')
+            p
+              lable 姓名
+              input(type='text', required='required', autofocus='autofocus', maxlength='8')
+            p
+              lable 匿名
+              input(type='radio', name='location', value='yes')
+              |  是
+              input(type='radio', name='location', value='no')
+              |  否
+          td
+            p
+              lable 日期及時間
+              input(type='datetime-local')
+            p
+              lable Email
+              input(type='email', placeholder='abc@domain.com')
+            p
+      p
+        lable 訊息
+      p
+        textarea(cols='50', rows='5')
+      input(type='submit', value='Submit')
+      input(type='reset', value='Clear')
+    aside
+      section
+        h5 教室預約
+      hr
+    form(method='post', action='on')
+      table(width='100%')
+        tr
+          td
+            p
+              lable 日期及時間
+              input(type='datetime-local')
+            p
+              lable 第幾周
+              input(type='week')
+          td(colspan='2')
+            p
+              lable 借用人
+              input(type='text', required='required', maxlength='8')
+            p
+              lable 部門
+              select
+                option(value='') 大學部
+                option(value='') 碩士班
+                option(value='') 博士班
+                option(value='')
+            p
+              lable 年級
+              input(type='number', min='1', max='5')
+          td
+            p
+              lable Lab
+              input(type='text')
+            p
+              lable 電話
+              input(type='tel')
+      h6 若借用時間為非上班時間，請先向系辦索取鑰匙
+      input(type='submit', value='Submit')
+      input(type='reset', value='Clear')
+
+  include ./footer-zhtw.jade
+  include ./js_script.jade

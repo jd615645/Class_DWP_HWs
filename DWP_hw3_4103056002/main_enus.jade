@@ -1,0 +1,26 @@
+extends ./head_enus.jade
+
+block footer-css
+  link(rel='stylesheet', href='./css/footer.css')
+
+block change
+  a.active(href="./index.html") zh_tw/en_us
+block content
+  #main-block
+    h1 News
+    hr
+    ul
+      li
+        a(href='http://www.cs.nchu.edu.tw/v3x/news_read.php?nno=319311', target='_blank') 國立中興大學資訊科學與工程學系徵求系主任
+      li
+        a(href='http://www.cs.nchu.edu.tw/news_file/319311_45os.pdf', target='_blank') 105學年度碩士在職專班招生面試時間表
+      li
+        a(href='http://www.cs.nchu.edu.tw/v3x/news_read.php?nno=319309', target='_blank') 本系誠徵專任助理教授(含)以上教師 1 名
+      li
+        a(href='http://www.cs.nchu.edu.tw/v3x/news_icon/pdf.png', target='_blank') 公告 : 104學年度第 1 學期系定必修課程獎學金受推薦學生名單
+      li
+        a(href='http://www.cs.nchu.edu.tw/news_file/319306_krai.pdf', target='_blank') 國立中興大學105學年度資訊科學與工程學系碩士班第5梯次新生放棄產生的缺額獲遞補名單公告
+    div(style="text-align: right; padding: 5px;")
+      a(href='./news.html') more...
+
+  include ./footer-enus.jade

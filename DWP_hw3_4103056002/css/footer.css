@@ -1,0 +1,11 @@
+#footer {
+	margin-top: 0px;
+	bottom: 0;
+}
+
+@media screen and (max-height: 600px) {
+  #footer {
+    margin-top: 10px;
+    bottom: auto;
+  }
+}
