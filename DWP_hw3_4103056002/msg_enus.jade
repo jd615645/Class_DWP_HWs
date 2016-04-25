@@ -4,119 +4,83 @@ block change
   a.active(href="./msg_zhtw.html") zh_tw/en_us
 block content
   #main-block
-    table(width='960', align='center', bgcolor='white', cellpadding='10')
-      tr
-        td
-          aside
-            h5
-              font(face='Arial') Problem
-            hr
-          form(method='post', autocomplete='')
-            p
-              lable
-                font(face='Arial') Date
-              input(type='date')
-            p
-              lable
-                font(face='Arial') Time
-              input(type='time')
-            p
-              lable
-                font(face='Arial') Email
-              input(type='email', placeholder='abc@domain.com')
-            p
-            p
-              lable
-                font(face='Arial') Problem
-              input(type='url')
-            p
-              lable
-                font(face='Arial') Browser
-              input(list='browsers', name='browser')
-              datalist#browsers
-                option(value='Internet Explorer')
-                option(value='Firefox')
-                option(value='Chrome')
-                option(value='Opera')
-                option(value='Safari')
-            input(type='submit', value='Submit')
-            input(type='reset', value='Clear')
-          aside
-            h5
-              font(face='Arial') Leave message
-            hr
-          form(method='post', action='on')
-            p
-              lable
-                font(face='Arial') Date
-              input(type='datetime-local')
-            p
-              lable
-                font(face='Arial') Name
-              input(type='text', required='required')
-            p
-              lable
-                font(face='Arial') Anonymous
-              input(type='radio', name='location', value='yes')
-              |  yes
-              input(type='radio', name='location', value='no')
-              |  no
-            p
-              lable
-                font(face='Arial') Message
-            p
-              textarea(cols='50', rows='5')
-            input(type='submit', value='Submit')
-            input(type='reset', value='Clear')
-          aside
-            section
-              h5
-                font(face='Arial') Borrow the classroom
-            hr
-          form(method='post', action='on')
-            p
-              lable
-                font(face='Arial') Date and Time
-              input(type='datetime-local')
-            p
-              lable
-                font(face='Arial') Week
-              input(type='week')
-            p
-              lable
-                font(face='Arial') Borrower
-              input(type='text')
-            p
-              lable
-                font(face='Arial') Degree
-              input(type='number', min='1', max='5')
-            p
-              lable
-                font(face='Arial') Department
-              select
-                option(value='') Bachelor degree
-                option(value='') Master's degree
-                option(value='') Academic degree
-                option(value='')
-            p
-              lable
-                font(face='Arial') Lab
-              input(type='text', required='required')
-            p
-              lable
-                font(face='Arial') Phone
-              input(type='tel', required='required')
-            input(type='submit', value='Submit')
-            input(type='reset', value='Clear')
-            // 不知道哪裡能用到所以就被放置了
-            p(hidden='')
-              input(type='datetime')
-              input(type='range', min='0', max='10')
-              input(type='color')
-              input(type='search')
-              input(type='number', name='points', step='3')
-              input(type='checkbox', name='checkbox')
-              input(type='password', name='password')
-              input(type='month')
-
+    h5.rand Problem
+    hr.rand
+    form.rand(method='post', autocomplete='')
+      p
+        lable Date
+        input(type='date')
+      p
+        lable Time
+        input(type='time')
+      p
+        lable Email
+        input(type='email', placeholder='abc@domain.com')
+      p
+        lable Problem
+        input(type='url')
+      p
+        lable Browser
+        input(list='browsers', name='browser')
+        datalist#browsers
+          option(value='Internet Explorer')
+          option(value='Firefox')
+          option(value='Chrome')
+          option(value='Opera')
+          option(value='Safari')
+      input(type='submit', value='Submit')
+      input(type='reset', value='Clear')
+    h5.rand Leave message
+    hr.rand
+    form.rand(method='post', action='on')
+      p
+        lable Date
+        input(type='datetime-local')
+      p
+        lable Name
+        input(type='text', required='required')
+      p
+        lable Anonymous
+        input(type='radio', name='location', value='yes')
+        |  yes
+        input(type='radio', name='location', value='no')
+        |  no
+      p
+        lable Message
+      p
+        textarea(cols='50', rows='5')
+      input(type='submit', value='Submit')
+      input(type='reset', value='Clear')
+    h5.rand Borrow the classroom
+    hr.rand
+    form.rand(method='post', action='on')
+      p
+        lable Date and Time
+        input(type='datetime-local')
+      p
+        lable Week
+        input(type='week')
+      p
+        lable Borrower
+        input(type='text')
+      p
+        lable Degree
+        input(type='number', min='1', max='5')
+      p
+        lable Department
+        select
+          option(value='') Bachelor degree
+          option(value='') Master's degree
+          option(value='') Academic degree
+          option(value='')
+      p
+        lable Lab
+        input(type='text', required='required')
+      p
+        lable Phone
+        input(type='tel', required='required')
+      input(type='submit', value='Submit')
+      input(type='reset', value='Clear')
+           
   include ./footer-enus.jade
+  include ./js_script.jade
