@@ -1,0 +1,32 @@
+body {
+  margin: 0px;
+  color: #1E6262;
+  font-family:'Roboto', '黑體-繁', '微軟正黑體', sans-serif;
+  background-color: #ECFFFB;
+}
+
+#main-page {
+  margin-left: 25%;
+  padding: 15px 10px;
+}
+h1, h2, p {
+  margin: 0px;
+  font-family:'Roboto', '黑體-繁', '微軟正黑體', sans-serif;
+}
+.text_header {
+  border-bottom: 1px solid rgba(34,36,38,.15);
+  margin-bottom: 10px;
+}
+
+#outline table {
+  width: 100%;
+}
+#outline td {
+  padding: 10px 0px 10px 5px;
+}
+#outline tr:nth-child(odd) {
+  background-color: #BBE9DB;
+}
+#outline tr:hover {
+  background-color: #AECCC6;
+}
