@@ -3,30 +3,60 @@ body {
   color: #1E6262;
   font-family:'Roboto', '黑體-繁', '微軟正黑體', sans-serif;
   background-color: #ECFFFB;
+  font-size: 16px;
 }
 
 #main-page {
-  margin-left: 25%;
+  margin-left: 15%;
   padding: 15px 10px;
 }
-h1, h2, p {
+h1, h2, p, a, button {
   margin: 0px;
-  font-family:'Roboto', '黑體-繁', '微軟正黑體', sans-serif;
+  font-family:'Roboto', '黑體-繁', '微軟正黑體', sans-serif !important;
+}
+a {
+  color: #1E6262 !important;
+  font-size: 16px;
 }
 .text_header {
   border-bottom: 1px solid rgba(34,36,38,.15);
   margin-bottom: 10px;
 }
-
-#outline table {
+.ui.modal .header {
+  font-family:'Roboto', '黑體-繁', '微軟正黑體', sans-serif;
+}
+table {
   width: 100%;
 }
-#outline td {
-  padding: 10px 0px 10px 5px;
-}
-#outline tr:nth-child(odd) {
+tr:nth-child(odd) {
   background-color: #BBE9DB;
 }
-#outline tr:hover {
+td:hover, tr:hover {
   background-color: #AECCC6;
+}
+td {
+  padding: 10px 0px 10px 5px;
+}
+.ui.message {
+  padding: 10px 15px !important;
+  margin-bottom: 5px;
+}
+
+#bulletin .detail table {
+  margin-bottom: 20px;
+}
+#bulletin a:hover {
+  color: #75C5C5 !important;
+}
+#scores table th, #bulletin .detail table th {
+  border: 2px solid #ECFFFB;
+  padding: 5px 0px;
+}
+#scores table td, #bulletin .detail table td {
+  border: 2px solid #ECFFFB;
+  text-align: center;
+  padding: 5px 0px;
+}
+#content button {
+  padding: 5px 10px;
 }
