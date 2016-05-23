@@ -1,4 +1,6 @@
 jQuery(document).ready(function($) {
+  var MENU = ['bulletin', 'outline', 'content', 'scores'];
+  var FILEPOST = ['.new_post', '', '', ''];
   $('#left-nav a').click(function() {
     $('#left-nav').find('.active').removeClass('active');
     $(this).addClass('active');
@@ -10,6 +12,7 @@ jQuery(document).ready(function($) {
       var data = result.data;
       $(ele).html(html);
     }, 'json');
+    load_data(parseInt(whichPage));
   });
 
   $(document).on('click', '#content .menu a', function() {
@@ -24,14 +27,17 @@ jQuery(document).ready(function($) {
     $('.modal').modal('show');
   });
 
-  $(document).on('click', '.btn_post', function() {
-    var title = $('.modal input[name="title"]').val(),
-        date = $('.modal input[name="date"]').val(), 
-        text = $('.modal textarea[name="text"]').val();
-    $.post('post.php', {title: title,date: date , text: text}, function(result) {
-      $('.new_post').append(result.html);
-    }, 'json');
-    $('.modal').modal('hide');
-  });
+  function load_data(num) {
+    var fileName = (MENU[parseInt(num)]),
+        postId = (FILEPOST[parseInt(num)]);
+    // console.log('login ' + fileName);
+    $.get(fileName + '.txt', function(data) {
+
+      if(data != '') {
+        $(postId).append(data);
+      }
+    });
+  }
+  // $("#left-nav a[value='0']").click();
 });
 

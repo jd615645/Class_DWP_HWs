@@ -18,7 +18,7 @@
           <p>上課時間: 3567</p>
         </div>
       </div>
-      <h2 class='text_header'>重要公告</h2>
+      <h2 class='text_header' style='margin-top: 20px;'>重要公告</h2>
       <div class='important_post'>
         <div>
           <div class='ui red message'>【預設公告】請遵守並協助推廣著作權、智慧財產權相關規範</div>
@@ -29,7 +29,37 @@
           <p>感謝您的配合</p>
         </div>
       </div>
-    </div>",
+      <hr>
+      <button class='ui teal button add_post'>新增文章</button>
+      <div class='ui modal'>
+        <i class='close icon'></i>
+        <div class='header'>新增文章</div>
+        <div class='content'>
+          <div class='ui form'>
+            <div class='field'>
+              <div class='two fields'>
+                <div class='field'>
+                  <label>標題</label>
+                  <input type='text' name='title'>
+                </div>
+                <div class='field'>
+                  <label>日期</label>
+                  <input type='text' name='date'>
+                </div>
+              </div>
+            </div>
+            <div class='field'>
+              <label>內文</label>
+              <textarea type='text' name='text'></textarea>
+            </div>
+          </div>
+        </div>
+        <div class='actions'>
+          <div class='ui primary button btn_post'>發送</div>
+        </div>
+      </div>
+    </div>
+    <script src='./js/bulletin.js'></script>",
   "<div id='outline'>
     <h2 class='text_header'>課程綱要</h2>
     <table>
@@ -72,175 +102,193 @@
     </table>
   </div>",
   "<div id='content'>
-    <div class='ui secondary menu'>
-      <a class='item active'>大綱</a>
-      <a class='item'>文件</a>
-      <a class='item'>作業</a>
-      <a class='item'>討論</a>
-      <a class='item'>測驗</a>
-      <a class='item'>問卷</a>
-      <a class='item'>觀摩</a>
+      <div class='ui secondary menu'>
+        <a class='item active'>大綱</a>
+        <a class='item'>文件</a>
+        <a class='item'>作業</a>
+        <a class='item'>討論</a>
+        <a class='item'>測驗</a>
+        <a class='item'>問卷</a>
+        <a class='item'>觀摩</a>
+      </div>
+      <div class='detail'>
+        <div>
+          <h2 class='text_header'>課程大綱</h2>
+          <table><tr><td>(尚無內容)</td></tr></table>
+          <hr>
+          <button class='ui teal button add_post'>新增文章</button>
+          <div class='ui modal'>
+            <i class='close icon'></i>
+            <div class='header'>新增文章</div>
+            <div class='content'>
+              <div class='ui form'>
+                <div class='field'>
+                  <label>內文</label>
+                  <textarea type='text' name='text'></textarea>
+                </div>
+              </div>
+            </div>
+            <div class='actions'>
+              <div class='ui primary button btn_post'>發送</div>
+            </div>
+          </div>
+        </div>
+        <div style='display: none'>
+          <h2 class='text_header'>課程講義</h2>
+          <table>
+            <tr>
+              <th>名稱</th>
+              <th>所屬單元</th>
+              <th>開放日期</th>
+              <th>截止日期</th>
+              <th>異動時間</th>
+              <th>功能</th>
+            </tr>
+            <tr>
+              <td>Server Side Programming</td>
+              <td>不分單元</td>
+              <td>沒有限制</td>
+              <td>沒有限制</td>
+              <td>2016/05/17 下午 01:19:50</td>
+              <td><button class='ui purple button'>VIEW</button></td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>不分單元</td>
+              <td>沒有限制</td>
+              <td>沒有限制</td>
+              <td>2016/04/27 上午 11:08:41</td>
+              <td><button class='ui purple button'>VIEW</button></td>
+            </tr>
+            <tr>
+              <td>Cascading Style Sheets</td>
+              <td>不分單元</td>
+              <td>沒有限制</td>
+              <td>沒有限制</td>
+              <td>2016/03/14 上午 11:34:02</td>
+              <td><button class='ui purple button'>VIEW</button></td>
+            </tr>
+            <tr>
+              <td>HTML5</td>
+              <td>不分單元</td>
+              <td>沒有限制</td>
+              <td>沒有限制</td>
+              <td>2016/03/02 下午 12:44:09</td>
+              <td><button class='ui purple button'>VIEW</button></td>
+            </tr>
+          </table>
+          <h2 class='text_header'>參考資料</h2>
+          <table><tr><td>(尚無內容)</td></tr></table>
+        </div>
+        <div style='display: none'>
+          <h2 class='text_header'>待繳作業</h2>
+          <table>
+            <tr>
+              <th>作業名稱</th>
+              <th>作業開始</th>
+              <th>作業結束</th>
+              <th>繳交型態</th>
+              <th>逾期</th>
+              <th>繳交情況</th>
+              <th>分組狀況</th>
+              <th>功能</th>
+            </tr>
+            <tr>
+              <td>Homework 4</td>
+              <td>2016/05/02<br>00:00:00</td>
+              <td>2016/05/24<br>23:59:59</td>
+              <td>個人繳交作業:可繳多次 (批閱以最後一次為主)</td>
+              <td>逾期不可繳</td>
+              <td>oo 個已繳 xx 個未繳</td>
+              <td>未分組</td>
+              <td><button class='ui orange button'>繳交</button></td>
+            </tr>
+          </table>
+          <h2 class='text_header'>互評作業</h2>
+          <table><tr><td>(尚無內容)</td></tr></table>
+          <h2 class='text_header'>逾期未繳作業</h2>
+          <table><tr><td>(尚無內容)</td></tr></table>
+          <h2 class='text_header'>已繳作業</h2>
+          <table>
+            <tr>
+              <th>作業名稱</th>
+              <th>繳交時間</th>
+              <th>繳交檔案</th>
+              <th>作業開始</th>
+              <th>作業結束</th>
+              <th>繳交型態</th>
+              <th>逾期</th>
+              <th>繳交情況</th>
+              <th>分組狀況</th>
+              <th>功能</th>
+            </tr>
+            <tr>
+              <td>Homework 3</td>
+              <td>2016/04/25<br>23:53:47</td>
+              <td>動態網頁程式設計第3次作業.zip</td>
+              <td>2016/05/02<br>00:00:00</td>
+              <td>2016/05/24<br>23:59:59</td>
+              <td>個人繳交作業:可繳多次 (批閱以最後一次為主)</td>
+              <td>逾期不可繳</td>
+              <td>oo 個已繳 xx 個未繳</td>
+              <td>未分組</td>
+              <td><button class='ui teal button'>RESULT</button></td>
+            </tr>
+            <tr>
+              <td>Homework 2</td>
+              <td>2016/04/10<br>22:30:58</td>
+              <td>動態網頁程式設計第2次作業.zip</td>
+              <td>2016/04/13<br>00:00:00</td>
+              <td>2016/04/26<br>23:59:59</td>
+              <td>個人繳交作業:可繳多次 (批閱以最後一次為主)</td>
+              <td>逾期不可繳</td>
+              <td>oo 個已繳 xx 個未繳</td>
+              <td>未分組</td>
+              <td><button class='ui teal button'>RESULT</button></td>
+            </tr>
+            <tr>
+              <td>Homework 1</td>
+              <td>2016/03/22<br>19:56:32</td>
+              <td>動態網頁程式設計第1次作業.zip</td>
+              <td>2016/03/09<br>00:00:00</td>
+              <td>2016/03/22<br>23:59:59</td>
+              <td>個人繳交作業:可繳多次 (批閱以最後一次為主)</td>
+              <td>逾期不可繳</td>
+              <td>oo 個已繳 xx 個未繳</td>
+              <td>未分組</td>
+              <td><button class='ui teal button'>RESULT</button></td>
+            </tr>
+          </table>
+        </div>
+        <div style='display: none'>
+          <h2 class='text_header'>討論區</h2>
+          <table><tr><td>(尚無內容)</td></tr></table>
+        </div>
+        <div style='display: none'>
+          <h2 class='text_header'>待繳試卷</h2>
+          <table><tr><td>(尚無內容)</td></tr></table>
+          <h2 class='text_header'>逾期未繳作業</h2>
+          <table><tr><td>(尚無內容)</td></tr></table>
+          <h2 class='text_header'>已繳試卷</h2>
+          <table><tr><td>(尚無內容)</td></tr></table>
+        </div>
+        <div style='display: none'>
+          <h2 class='text_header'>待繳問卷</h2>
+          <table><tr><td>(尚無內容)</td></tr></table>
+          <h2 class='text_header'>逾期未繳問卷</h2>
+          <table><tr><td>(尚無內容)</td></tr></table>
+          <h2 class='text_header'>已繳問卷</h2>
+          <table><tr><td>(尚無內容)</td></tr></table>
+        </div>
+        <div style='display: none'>
+          <h2 class='text_header'>討論觀摩區</h2>
+          <table><tr><td>(尚無內容)</td></tr></table>
+          <h2 class='text_header'>作業觀摩區</h2>
+          <table><tr><td>(尚無內容)</td></tr></table>
+        </div>
+      </div>
     </div>
-    <div class='detail'>
-      <div>
-        <h2 class='text_header'>課程大綱</h2>
-        <table><tr><td>(尚無內容)</td></tr></table>
-      </div>
-      <div style='display: none'>
-        <h2 class='text_header'>課程講義</h2>
-        <table>
-          <tr>
-            <th>名稱</th>
-            <th>所屬單元</th>
-            <th>開放日期</th>
-            <th>截止日期</th>
-            <th>異動時間</th>
-            <th>功能</th>
-          </tr>
-          <tr>
-            <td>Server Side Programming</td>
-            <td>不分單元</td>
-            <td>沒有限制</td>
-            <td>沒有限制</td>
-            <td>2016/05/17 下午 01:19:50</td>
-            <td><button class='ui purple button'>VIEW</button></td>
-          </tr>
-          <tr>
-            <td>JavaScript</td>
-            <td>不分單元</td>
-            <td>沒有限制</td>
-            <td>沒有限制</td>
-            <td>2016/04/27 上午 11:08:41</td>
-            <td><button class='ui purple button'>VIEW</button></td>
-          </tr>
-          <tr>
-            <td>Cascading Style Sheets</td>
-            <td>不分單元</td>
-            <td>沒有限制</td>
-            <td>沒有限制</td>
-            <td>2016/03/14 上午 11:34:02</td>
-            <td><button class='ui purple button'>VIEW</button></td>
-          </tr>
-          <tr>
-            <td>HTML5</td>
-            <td>不分單元</td>
-            <td>沒有限制</td>
-            <td>沒有限制</td>
-            <td>2016/03/02 下午 12:44:09</td>
-            <td><button class='ui purple button'>VIEW</button></td>
-          </tr>
-        </table>
-        <h2 class='text_header'>參考資料</h2>
-        <table><tr><td>(尚無內容)</td></tr></table>
-      </div>
-      <div style='display: none'>
-        <h2 class='text_header'>待繳作業</h2>
-        <table>
-          <tr>
-            <th>作業名稱</th>
-            <th>作業開始</th>
-            <th>作業結束</th>
-            <th>繳交型態</th>
-            <th>逾期</th>
-            <th>繳交情況</th>
-            <th>分組狀況</th>
-            <th>功能</th>
-          </tr>
-          <tr>
-            <td>Homework 4</td>
-            <td>2016/05/02<br>00:00:00</td>
-            <td>2016/05/24<br>23:59:59</td>
-            <td>個人繳交作業:可繳多次 (批閱以最後一次為主)</td>
-            <td>逾期不可繳</td>
-            <td>oo 個已繳 xx 個未繳</td>
-            <td>未分組</td>
-            <td><button class='ui orange button'>繳交</button></td>
-          </tr>
-        </table>
-        <h2 class='text_header'>互評作業</h2>
-        <table><tr><td>(尚無內容)</td></tr></table>
-        <h2 class='text_header'>逾期未繳作業</h2>
-        <table><tr><td>(尚無內容)</td></tr></table>
-        <h2 class='text_header'>已繳作業</h2>
-        <table>
-          <tr>
-            <th>作業名稱</th>
-            <th>繳交時間</th>
-            <th>繳交檔案</th>
-            <th>作業開始</th>
-            <th>作業結束</th>
-            <th>繳交型態</th>
-            <th>逾期</th>
-            <th>繳交情況</th>
-            <th>分組狀況</th>
-            <th>功能</th>
-          </tr>
-          <tr>
-            <td>Homework 3</td>
-            <td>2016/04/25<br>23:53:47</td>
-            <td>動態網頁程式設計第3次作業.zip</td>
-            <td>2016/05/02<br>00:00:00</td>
-            <td>2016/05/24<br>23:59:59</td>
-            <td>個人繳交作業:可繳多次 (批閱以最後一次為主)</td>
-            <td>逾期不可繳</td>
-            <td>oo 個已繳 xx 個未繳</td>
-            <td>未分組</td>
-            <td><button class='ui teal button'>RESULT</button></td>
-          </tr>
-          <tr>
-            <td>Homework 2</td>
-            <td>2016/04/10<br>22:30:58</td>
-            <td>動態網頁程式設計第2次作業.zip</td>
-            <td>2016/04/13<br>00:00:00</td>
-            <td>2016/04/26<br>23:59:59</td>
-            <td>個人繳交作業:可繳多次 (批閱以最後一次為主)</td>
-            <td>逾期不可繳</td>
-            <td>oo 個已繳 xx 個未繳</td>
-            <td>未分組</td>
-            <td><button class='ui teal button'>RESULT</button></td>
-          </tr>
-          <tr>
-            <td>Homework 1</td>
-            <td>2016/03/22<br>19:56:32</td>
-            <td>動態網頁程式設計第1次作業.zip</td>
-            <td>2016/03/09<br>00:00:00</td>
-            <td>2016/03/22<br>23:59:59</td>
-            <td>個人繳交作業:可繳多次 (批閱以最後一次為主)</td>
-            <td>逾期不可繳</td>
-            <td>oo 個已繳 xx 個未繳</td>
-            <td>未分組</td>
-            <td><button class='ui teal button'>RESULT</button></td>
-          </tr>
-        </table>
-      </div>
-      <div style='display: none'>
-        <h2 class='text_header'>討論區</h2>
-        <table><tr><td>(尚無內容)</td></tr></table>
-      </div>
-      <div style='display: none'>
-        <h2 class='text_header'>待繳試卷</h2>
-        <table><tr><td>(尚無內容)</td></tr></table>
-        <h2 class='text_header'>逾期未繳作業</h2>
-        <table><tr><td>(尚無內容)</td></tr></table>
-        <h2 class='text_header'>已繳試卷</h2>
-        <table><tr><td>(尚無內容)</td></tr></table>
-      </div>
-      <div style='display: none'>
-        <h2 class='text_header'>待繳問卷</h2>
-        <table><tr><td>(尚無內容)</td></tr></table>
-        <h2 class='text_header'>逾期未繳問卷</h2>
-        <table><tr><td>(尚無內容)</td></tr></table>
-        <h2 class='text_header'>已繳問卷</h2>
-        <table><tr><td>(尚無內容)</td></tr></table>
-      </div>
-      <div style='display: none'>
-        <h2 class='text_header'>討論觀摩區</h2>
-        <table><tr><td>(尚無內容)</td></tr></table>
-        <h2 class='text_header'>作業觀摩區</h2>
-        <table><tr><td>(尚無內容)</td></tr></table>
-      </div>
-    </div>
-  </div>",
+    <script src='./js/content.js'></script>",
   "<div id='scores'>
     <h2 class='text_header'>成績</h2>
       <table>

@@ -8,6 +8,9 @@
   <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.css'>
   <link rel='stylesheet' href='./css/main.css'>
   <link rel='stylesheet' href='./css/navbar.css'>
+  <script src='//code.jquery.com/jquery-2.2.0.min.js'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js'></script>
+  <script src='./js/main.js'></script>
 </head>
 <body>
   <div id='top-nav'>
@@ -28,7 +31,7 @@
     </ul>
   </div>
   <div id='main-page'>
-    <div id='bulletin'>
+    <!-- <div id='bulletin'>
       <h2 class='text_header'>最新公告</h2>
       <div class='new_post'>
         <div>
@@ -43,7 +46,7 @@
           <p>上課時間: 3567</p>
         </div>
       </div>
-      <h2 class='text_header'>重要公告</h2>
+      <h2 class='text_header' style='margin-top: 20px;'>重要公告</h2>
       <div class='important_post'>
         <div>
           <div class='ui red message'>【預設公告】請遵守並協助推廣著作權、智慧財產權相關規範</div>
@@ -62,12 +65,12 @@
         <div class='content'>
           <div class='ui form'>
             <div class='field'>
-              <div class="two fields">
-                <div class="field">
+              <div class='two fields'>
+                <div class='field'>
                   <label>標題</label>
                   <input type='text' name='title'>
                 </div>
-                <div class="field">
+                <div class='field'>
                   <label>日期</label>
                   <input type='text' name='date'>
                 </div>
@@ -84,9 +87,48 @@
         </div>
       </div>
     </div>
+    <script src='./js/bulletin.js'></script> -->
+    <div id='outline'>
+      <h2 class='text_header'>課程綱要</h2>
+      <table>
+        <tr>
+          <td>課程名稱</td>
+          <td>動態網頁程式設計</td>
+        </tr>
+        <tr>
+          <td>面授地點</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>課程目標</td>
+          <td>Learn about server and client side web programming.</td>
+        </tr>
+        <tr>
+          <td>面授時間</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>課程綱要</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>評量標準</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>參考書籍</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>修課條件</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>附件</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
   </div>
-  <script src='//code.jquery.com/jquery-2.2.0.min.js'></script>
-  <script src='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js'></script>
-  <script src='./js/main.js'></script>
 </body>
 </html>
