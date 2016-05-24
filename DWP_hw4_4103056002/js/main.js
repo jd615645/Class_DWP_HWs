@@ -1,6 +1,5 @@
 jQuery(document).ready(function($) {
   var MENU = ['bulletin', 'outline', 'content', 'scores'];
-  var FILEPOST = ['.new_post', '', '', ''];
   $('#left-nav a').click(function() {
     $('#left-nav').find('.active').removeClass('active');
     $(this).addClass('active');
@@ -28,14 +27,16 @@ jQuery(document).ready(function($) {
   });
 
   function load_data(num) {
-    var fileName = (MENU[parseInt(num)]),
-        postId = (FILEPOST[parseInt(num)]);
+    var num = parseInt(num);
+    var fileName = (MENU[num]);
     // console.log('login ' + fileName);
     $.get(fileName + '.txt', function(data) {
-
-      if(data != '') {
-        $(postId).append(data);
-      }
+      if(num == 0)
+        $('.new_post').append(data);
+      else if(num == 1)
+        $('#outline table').html(data);
+      else if(num == 2)
+        $('.detail div:first-child td').text(data);
     });
   }
   // $("#left-nav a[value='0']").click();

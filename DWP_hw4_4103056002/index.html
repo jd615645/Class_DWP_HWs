@@ -1,3 +1,6 @@
+<?php 
+  setcookie("havecookie", "no", time()+3600);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,7 +34,7 @@
     </ul>
   </div>
   <div id='main-page'>
-    <!-- <div id='bulletin'>
+    <div id='bulletin'>
       <h2 class='text_header'>最新公告</h2>
       <div class='new_post'>
         <div>
@@ -87,48 +90,8 @@
         </div>
       </div>
     </div>
-    <script src='./js/bulletin.js'></script> -->
-    <div id='outline'>
-      <h2 class='text_header'>課程綱要</h2>
-      <table>
-        <tr>
-          <td>課程名稱</td>
-          <td>動態網頁程式設計</td>
-        </tr>
-        <tr>
-          <td>面授地點</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>課程目標</td>
-          <td>Learn about server and client side web programming.</td>
-        </tr>
-        <tr>
-          <td>面授時間</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>課程綱要</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>評量標準</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>參考書籍</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>修課條件</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>附件</td>
-          <td></td>
-        </tr>
-      </table>
-    </div>
+    <script src='./js/bulletin.js'></script>
+
   </div>
 </body>
 </html>

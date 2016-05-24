@@ -1,4 +1,12 @@
 <?php
+  if(!isset($_COOKIE["havecookie"])) {
+    $file = array('bulletin.txt', 'outline.txt', 'constant.txt');
+    foreach ($file as $value) {
+      $fp = fopen($value, 'w');
+      fwrite($fp, "");
+      fclose($fp);
+    }
+  }
   $whichPage = $_POST['text'];
   $ary = array();
   $ele = "#main-page";
@@ -60,47 +68,81 @@
       </div>
     </div>
     <script src='./js/bulletin.js'></script>",
-  "<div id='outline'>
-    <h2 class='text_header'>課程綱要</h2>
-    <table>
-      <tr>
-        <td>課程名稱</td>
-        <td>動態網頁程式設計</td>
-      </tr>
-      <tr>
-        <td>面授地點</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>課程目標</td>
-        <td>Learn about server and client side web programming.</td>
-      </tr>
-      <tr>
-        <td>面授時間</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>課程綱要</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>評量標準</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>參考書籍</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>修課條件</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>附件</td>
-        <td></td>
-      </tr>
-    </table>
-  </div>",
+  "    <div id='outline'>
+      <h2 class='text_header'>課程綱要</h2>
+      <table>
+        <tr>
+          <td>課程名稱</td>
+          <td>動態網頁程式設計</td>
+        </tr>
+        <tr>
+          <td>面授地點</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>課程目標</td>
+          <td>Learn about server and client side web programming.</td>
+        </tr>
+        <tr>
+          <td>面授時間</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>課程綱要</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>評量標準</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>參考書籍</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>修課條件</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>附件</td>
+          <td></td>
+        </tr>
+      </table>
+      <hr>
+      <button class='ui teal button add_post'>新增文章</button>
+      <div class='ui modal'>
+        <i class='close icon'></i>
+        <div class='header'>新增文章</div>
+        <div class='content'>
+          <div class='ui form'>
+            <div class='field'>
+              <label>課程名稱</label>
+              <input type='text' name='title'>
+              <label>面授地點</label>
+              <input type='text' name='local'>
+              <label>課程目標</label>
+              <input type='text' name='goal'>
+              <label>面授時間</label>
+              <input type='text' name='time'>
+              <label>課程綱要</label>
+              <input type='text' name='outline'>
+              <label>評量標準</label>
+              <input type='text' name='standard'>
+              <label>參考書籍</label>
+              <input type='text' name='book'>
+              <label>修課條件</label>
+              <input type='text' name='conditional'>
+              <label>附件</label>
+              <input type='text' name='data'>
+            </div>
+          </div>
+        </div>
+        <div class='actions'>
+          <div class='ui primary button btn_post'>發送</div>
+        </div>
+      </div>
+    </div>
+    <script src='./js/outline.js'></script>",
   "<div id='content'>
       <div class='ui secondary menu'>
         <a class='item active'>大綱</a>
