@@ -3,6 +3,8 @@
 
 //資料庫位置
 $db_server = "localhost:3306";
+
+$db_name = "ecampus";
 //資料庫管理者帳號
 $db_user = "root";
 //資料庫管理者密碼

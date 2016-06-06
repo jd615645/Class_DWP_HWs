@@ -18,7 +18,7 @@
       <li>eCampus</li>
       <li><sub>動態網頁程式設計(10422331)</sub></li>
       <li id='logout'>
-        <a class='active' href='#about'>Log out</a>
+        <a class='active' href='logout.php'>Log out</a>
       </li>
     </ul>
   </div>
